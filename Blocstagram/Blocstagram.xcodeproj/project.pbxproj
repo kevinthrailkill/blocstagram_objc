@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		1983C4141CE268AA00DC59C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4131CE268AA00DC59C6 /* main.m */; };
 		1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4161CE268AA00DC59C6 /* AppDelegate.m */; };
-		1983C41A1CE268AA00DC59C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4191CE268AA00DC59C6 /* ViewController.m */; };
 		1983C41F1CE268AA00DC59C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1983C41E1CE268AA00DC59C6 /* Assets.xcassets */; };
 		1983C4221CE268AA00DC59C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1983C4201CE268AA00DC59C6 /* LaunchScreen.storyboard */; };
 		1983C42D1CE268AA00DC59C6 /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C42C1CE268AA00DC59C6 /* BlocstagramTests.m */; };
 		1983C4381CE268AA00DC59C6 /* BlocstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4371CE268AA00DC59C6 /* BlocstagramUITests.m */; };
+		1983C4501CE269DC00DC59C6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C4461CE269DC00DC59C6 /* 1.jpg */; };
+		1983C4511CE269DC00DC59C6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C4471CE269DC00DC59C6 /* 2.jpg */; };
+		1983C4521CE269DC00DC59C6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C4481CE269DC00DC59C6 /* 3.jpg */; };
+		1983C4531CE269DC00DC59C6 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C4491CE269DC00DC59C6 /* 4.jpg */; };
+		1983C4541CE269DC00DC59C6 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44A1CE269DC00DC59C6 /* 5.jpg */; };
+		1983C4551CE269DC00DC59C6 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44B1CE269DC00DC59C6 /* 6.jpg */; };
+		1983C4561CE269DC00DC59C6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44C1CE269DC00DC59C6 /* 7.jpg */; };
+		1983C4571CE269DC00DC59C6 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44D1CE269DC00DC59C6 /* 8.jpg */; };
+		1983C4581CE269DC00DC59C6 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44E1CE269DC00DC59C6 /* 9.jpg */; };
+		1983C4591CE269DC00DC59C6 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1983C44F1CE269DC00DC59C6 /* 10.jpg */; };
+		1983C4671CE26CD100DC59C6 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +48,6 @@
 		1983C4131CE268AA00DC59C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1983C4151CE268AA00DC59C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1983C4161CE268AA00DC59C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1983C4181CE268AA00DC59C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1983C4191CE268AA00DC59C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1983C41E1CE268AA00DC59C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1983C4211CE268AA00DC59C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1983C4231CE268AA00DC59C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,18 @@
 		1983C4331CE268AA00DC59C6 /* BlocstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1983C4371CE268AA00DC59C6 /* BlocstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramUITests.m; sourceTree = "<group>"; };
 		1983C4391CE268AA00DC59C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1983C4461CE269DC00DC59C6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		1983C4471CE269DC00DC59C6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		1983C4481CE269DC00DC59C6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		1983C4491CE269DC00DC59C6 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		1983C44A1CE269DC00DC59C6 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		1983C44B1CE269DC00DC59C6 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		1983C44C1CE269DC00DC59C6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		1983C44D1CE269DC00DC59C6 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		1983C44E1CE269DC00DC59C6 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		1983C44F1CE269DC00DC59C6 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		1983C4651CE26CD100DC59C6 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewController.h; sourceTree = "<group>"; };
+		1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +121,10 @@
 			children = (
 				1983C4151CE268AA00DC59C6 /* AppDelegate.h */,
 				1983C4161CE268AA00DC59C6 /* AppDelegate.m */,
-				1983C4181CE268AA00DC59C6 /* ViewController.h */,
-				1983C4191CE268AA00DC59C6 /* ViewController.m */,
+				1983C4651CE26CD100DC59C6 /* ImagesTableViewController.h */,
+				1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */,
 				1983C41E1CE268AA00DC59C6 /* Assets.xcassets */,
+				1983C4451CE269C400DC59C6 /* Images */,
 				1983C4201CE268AA00DC59C6 /* LaunchScreen.storyboard */,
 				1983C4231CE268AA00DC59C6 /* Info.plist */,
 				1983C4121CE268AA00DC59C6 /* Supporting Files */,
@@ -135,6 +156,23 @@
 				1983C4391CE268AA00DC59C6 /* Info.plist */,
 			);
 			path = BlocstagramUITests;
+			sourceTree = "<group>";
+		};
+		1983C4451CE269C400DC59C6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1983C4461CE269DC00DC59C6 /* 1.jpg */,
+				1983C4471CE269DC00DC59C6 /* 2.jpg */,
+				1983C4481CE269DC00DC59C6 /* 3.jpg */,
+				1983C4491CE269DC00DC59C6 /* 4.jpg */,
+				1983C44A1CE269DC00DC59C6 /* 5.jpg */,
+				1983C44B1CE269DC00DC59C6 /* 6.jpg */,
+				1983C44C1CE269DC00DC59C6 /* 7.jpg */,
+				1983C44D1CE269DC00DC59C6 /* 8.jpg */,
+				1983C44E1CE269DC00DC59C6 /* 9.jpg */,
+				1983C44F1CE269DC00DC59C6 /* 10.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +278,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1983C4581CE269DC00DC59C6 /* 9.jpg in Resources */,
+				1983C4571CE269DC00DC59C6 /* 8.jpg in Resources */,
+				1983C4531CE269DC00DC59C6 /* 4.jpg in Resources */,
+				1983C4521CE269DC00DC59C6 /* 3.jpg in Resources */,
+				1983C4551CE269DC00DC59C6 /* 6.jpg in Resources */,
+				1983C4501CE269DC00DC59C6 /* 1.jpg in Resources */,
 				1983C4221CE268AA00DC59C6 /* LaunchScreen.storyboard in Resources */,
+				1983C4541CE269DC00DC59C6 /* 5.jpg in Resources */,
+				1983C4561CE269DC00DC59C6 /* 7.jpg in Resources */,
+				1983C4511CE269DC00DC59C6 /* 2.jpg in Resources */,
+				1983C4591CE269DC00DC59C6 /* 10.jpg in Resources */,
 				1983C41F1CE268AA00DC59C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1983C41A1CE268AA00DC59C6 /* ViewController.m in Sources */,
+				1983C4671CE26CD100DC59C6 /* ImagesTableViewController.m in Sources */,
 				1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */,
 				1983C4141CE268AA00DC59C6 /* main.m in Sources */,
 			);
