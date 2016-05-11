@@ -25,7 +25,10 @@ static UIFont *boldFont;
 static UIColor *usernameLabelGray;
 static UIColor *commentLabelGray;
 static UIColor *linkColor;
+static UIColor *firstCommentColor;
 static NSParagraphStyle *paragraphStyle;
+static NSParagraphStyle *evenParagraphStyle;
+
 
 @implementation MediaTableViewCell
 
@@ -102,6 +105,7 @@ static NSParagraphStyle *paragraphStyle;
     usernameLabelGray = [UIColor colorWithRed:0.933 green:0.933 blue:0.933 alpha:1]; /*#eeeeee*/
     commentLabelGray = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1]; /*#e5e5e5*/
     linkColor = [UIColor colorWithRed:0.345 green:0.314 blue:0.427 alpha:1]; /*#58506d*/
+    firstCommentColor = [UIColor colorWithRed:1 green:0.647 blue:0 alpha:1];
     
     NSMutableParagraphStyle *mutableParagraphStyle = [[NSMutableParagraphStyle alloc] init];
     mutableParagraphStyle.headIndent = 20.0;
@@ -110,6 +114,17 @@ static NSParagraphStyle *paragraphStyle;
     mutableParagraphStyle.paragraphSpacingBefore = 5;
     
     paragraphStyle = mutableParagraphStyle;
+    
+    NSMutableParagraphStyle *mutableEvenParagraphStyle = [[NSMutableParagraphStyle alloc] init];
+    mutableEvenParagraphStyle.headIndent = 20.0;
+    mutableEvenParagraphStyle.firstLineHeadIndent = 20.0;
+    mutableEvenParagraphStyle.tailIndent = -20.0;
+    mutableEvenParagraphStyle.paragraphSpacingBefore = 5;
+    mutableEvenParagraphStyle.alignment = NSTextAlignmentRight;
+    
+    evenParagraphStyle = mutableEvenParagraphStyle;
+    
+    
 }
 
 + (CGFloat) heightForMediaItem:(Media *)mediaItem width:(CGFloat)width {
@@ -147,19 +162,51 @@ static NSParagraphStyle *paragraphStyle;
     [mutableUsernameAndCaptionString addAttribute:NSFontAttributeName value:[boldFont fontWithSize:usernameFontSize] range:usernameRange];
     [mutableUsernameAndCaptionString addAttribute:NSForegroundColorAttributeName value:linkColor range:usernameRange];
     
+    
+    NSRange captionRange = [baseString rangeOfString:self.mediaItem.caption];
+    [mutableUsernameAndCaptionString addAttribute:NSKernAttributeName value:@3 range:captionRange];
+    
+    
+    
     return mutableUsernameAndCaptionString;
 }
 
 - (NSAttributedString *) commentString {
     NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] init];
     
+    BOOL firstComment = TRUE;
+    BOOL isEven = TRUE;
+    
     for (Comment *comment in self.mediaItem.comments) {
         // Make a string that says "username comment" followed by a line break
         NSString *baseString = [NSString stringWithFormat:@"%@ %@\n", comment.from.userName, comment.text];
         
         // Make an attributed string, with the "username" bold
+        NSMutableAttributedString *oneCommentString;
         
-        NSMutableAttributedString *oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle}];
+        if(firstComment){
+            oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle, NSForegroundColorAttributeName: firstCommentColor}];
+            
+            firstComment = FALSE;
+        }else{
+            
+            
+            if(isEven){
+                 oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : evenParagraphStyle}];
+            }else{
+                 oneCommentString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : lightFont, NSParagraphStyleAttributeName : paragraphStyle}];
+            }
+            
+            isEven = !isEven;
+            
+          
+        }
+        
+        
+        
+        
+        
+        
         
         NSRange usernameRange = [baseString rangeOfString:comment.from.userName];
         [oneCommentString addAttribute:NSFontAttributeName value:boldFont range:usernameRange];
