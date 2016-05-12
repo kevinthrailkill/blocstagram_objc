@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */; };
+		191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B61CE525FD00E69D83 /* LoginViewController.m */; };
 		1983C4141CE268AA00DC59C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4131CE268AA00DC59C6 /* main.m */; };
 		1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4161CE268AA00DC59C6 /* AppDelegate.m */; };
 		1983C41F1CE268AA00DC59C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1983C41E1CE268AA00DC59C6 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		191822B21CE3B28C00E69D83 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
 		191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
+		191822B51CE525FD00E69D83 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		191822B61CE525FD00E69D83 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		1983C40F1CE268AA00DC59C6 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1983C4131CE268AA00DC59C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1983C4151CE268AA00DC59C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				1983C46F1CE2767800DC59C6 /* Comment.m */,
 				1983C4711CE276D600DC59C6 /* DataSource.h */,
 				1983C4721CE276D600DC59C6 /* DataSource.m */,
+				191822B51CE525FD00E69D83 /* LoginViewController.h */,
+				191822B61CE525FD00E69D83 /* LoginViewController.m */,
 				1983C41E1CE268AA00DC59C6 /* Assets.xcassets */,
 				1983C4451CE269C400DC59C6 /* Images */,
 				1983C4201CE268AA00DC59C6 /* LaunchScreen.storyboard */,
@@ -344,6 +349,7 @@
 				191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */,
 				1983C46D1CE2762100DC59C6 /* Media.m in Sources */,
 				1983C4671CE26CD100DC59C6 /* ImagesTableViewController.m in Sources */,
+				191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */,
 				1983C4731CE276D600DC59C6 /* DataSource.m in Sources */,
 				1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */,
 				1983C4141CE268AA00DC59C6 /* main.m in Sources */,
@@ -482,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinthrailkill.Blocstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinthrailkill.Blocstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
