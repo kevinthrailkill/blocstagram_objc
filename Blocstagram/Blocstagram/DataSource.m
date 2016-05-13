@@ -75,6 +75,10 @@
                             [self downloadImageForMediaItem:mediaItem];
                         }
                         
+                        
+                        //this addition checks for new images after it loads the images that are saved
+                        [self requestNewItemsWithCompletionHandler:^(NSError *error) {}];
+                        
                     } else {
                         [self populateDataWithParameters:nil completionHandler:nil];
                     }
