@@ -22,6 +22,8 @@
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
+
 
 
 
@@ -54,6 +56,11 @@ static NSParagraphStyle *paragraphStyle;
         [self.mediaImageView addGestureRecognizer:self.longPressGestureRecognizer];
         
         
+        self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
+        self.doubleTap.numberOfTapsRequired = 2;
+
+        [self.tapGestureRecognizer requireGestureRecognizerToFail:self.doubleTap];
+        [self.mediaImageView addGestureRecognizer:self.doubleTap];
         
         self.usernameAndCaptionLabel = [[UILabel alloc] init];
         self.usernameAndCaptionLabel.numberOfLines = 0;
@@ -248,6 +255,11 @@ static NSParagraphStyle *paragraphStyle;
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }
 }
+
+- (void) doubleTapFired:(UITapGestureRecognizer *)sender {
+    [self.delegate cell:self didDoubleTapImageView:self.mediaImageView];
+}
+
 
 
 @end

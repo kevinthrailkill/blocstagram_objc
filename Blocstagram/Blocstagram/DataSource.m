@@ -149,6 +149,12 @@
     [mutableArrayWithKVO removeObject:item];
 }
 
+- (void) downloadNewImageOnDoubleTap:(Media *)item
+{
+    [self downloadNewImageOnDoubleTap:item];
+}
+
+
 
 #pragma mark - refresh data
 

@@ -230,4 +230,9 @@
     }
 }
 
+-(void) cell:(MediaTableViewCell *)cell didDoubleTapImageView:(UIImageView *)imageView
+{
+    [[DataSource sharedInstance] downloadNewImageOnDoubleTap:cell.mediaItem];
+}
+
 @end
