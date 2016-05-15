@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */; };
 		191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B61CE525FD00E69D83 /* LoginViewController.m */; };
+		1966AAE31CE6CE8F0072EA12 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */; };
 		1983C4141CE268AA00DC59C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4131CE268AA00DC59C6 /* main.m */; };
 		1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4161CE268AA00DC59C6 /* AppDelegate.m */; };
 		1983C41F1CE268AA00DC59C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1983C41E1CE268AA00DC59C6 /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 		191822B51CE525FD00E69D83 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		191822B61CE525FD00E69D83 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		1983C40F1CE268AA00DC59C6 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1983C4131CE268AA00DC59C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1983C4151CE268AA00DC59C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */,
 				191822B21CE3B28C00E69D83 /* MediaTableViewCell.h */,
 				191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */,
+				1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */,
+				1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */,
 				1983C4681CE275D000DC59C6 /* User.h */,
 				1983C4691CE275D000DC59C6 /* User.m */,
 				1983C46B1CE2762100DC59C6 /* Media.h */,
@@ -515,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1966AAE31CE6CE8F0072EA12 /* MediaFullScreenViewController.m in Sources */,
 				1983C46A1CE275D000DC59C6 /* User.m in Sources */,
 				1983C4701CE2767800DC59C6 /* Comment.m in Sources */,
 				191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */,
