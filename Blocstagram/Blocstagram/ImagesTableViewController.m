@@ -208,10 +208,16 @@
 #pragma mark - MediaTableViewCellDelegate
 
 - (void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
+    
+    UINavigationController *navVC = [[UINavigationController alloc] init];
+    
     MediaFullScreenViewController *fullScreenVC = [[MediaFullScreenViewController alloc] initWithMedia:cell.mediaItem];
     
-    [self presentViewController:fullScreenVC animated:YES completion:nil];
+     [navVC setViewControllers:@[fullScreenVC] animated:YES];
+    
+    [self presentViewController:navVC animated:YES completion:nil];
 }
+
 
 - (void) cell:(MediaTableViewCell *)cell didLongPressImageView:(UIImageView *)imageView {
     NSMutableArray *itemsToShare = [NSMutableArray array];

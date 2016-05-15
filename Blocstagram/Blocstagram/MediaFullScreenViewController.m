@@ -8,11 +8,14 @@
 
 #import "MediaFullScreenViewController.h"
 #import "Media.h"
+#import "MediaTableViewCell.h"
 
 
 @interface MediaFullScreenViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) Media *media;
+@property (nonatomic, strong) MediaTableViewCell *mediaCell;
+
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
 
@@ -30,6 +33,8 @@
     
     return self;
 }
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,7 +75,31 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithTitle:@"Share" style: UIBarButtonItemStylePlain target:self action:@selector(share:)];
+    self.navigationItem.rightBarButtonItem = shareButton;
+    
     [self centerScrollView];
+}
+
+- (IBAction)share:(id)sender {
+    
+    NSLog(@"Share Button Pressed");
+    
+    NSMutableArray *itemsToShare = [NSMutableArray array];
+    
+    if (self.media.caption.length > 0) {
+        [itemsToShare addObject:self.media.caption];
+    }
+    
+    if (self.media.image) {
+        [itemsToShare addObject:self.media.image];
+    }
+    
+    if (itemsToShare.count > 0) {
+        UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+        [self presentViewController:activityVC animated:YES completion:nil];
+    }
+    
 }
 
 - (void) viewWillLayoutSubviews {
