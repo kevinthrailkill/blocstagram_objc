@@ -31,6 +31,8 @@
 		1983C46D1CE2762100DC59C6 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C46C1CE2762100DC59C6 /* Media.m */; };
 		1983C4701CE2767800DC59C6 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C46F1CE2767800DC59C6 /* Comment.m */; };
 		1983C4731CE276D600DC59C6 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4721CE276D600DC59C6 /* DataSource.m */; };
+		19A772D11CEA4FC200E3F36D /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A772D01CEA4FC200E3F36D /* CircleSpinnerView.m */; };
+		19A772D61CEA517200E3F36D /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A772D51CEA517200E3F36D /* LikeButton.m */; };
 		6688B7CFC10197EA907E8C94 /* libPods-BlocstagramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2873FC37FF7881B3A21D4C9C /* libPods-BlocstagramTests.a */; };
 		8E0506C3D289FB7CDA8549AF /* libPods-BlocstagramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCEAFE0EC22FF13E94257C0 /* libPods-BlocstagramUITests.a */; };
 		DD2E0DDE86D33BBB9105BEBF /* libPods-Blocstagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D2F86163BCACB2F458D13 /* libPods-Blocstagram.a */; };
@@ -94,6 +96,10 @@
 		1983C46F1CE2767800DC59C6 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		1983C4711CE276D600DC59C6 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		1983C4721CE276D600DC59C6 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		19A772CF1CEA4FC200E3F36D /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		19A772D01CEA4FC200E3F36D /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		19A772D41CEA517200E3F36D /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		19A772D51CEA517200E3F36D /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		2873FC37FF7881B3A21D4C9C /* libPods-BlocstagramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlocstagramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EAA6DA487934047B18CC89 /* Pods-BlocstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocstagramUITests/Pods-BlocstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CBD7957CB52FE04621EEBF1 /* Pods-Blocstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blocstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blocstagram/Pods-Blocstagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,22 +165,11 @@
 			children = (
 				1983C4151CE268AA00DC59C6 /* AppDelegate.h */,
 				1983C4161CE268AA00DC59C6 /* AppDelegate.m */,
-				1983C4651CE26CD100DC59C6 /* ImagesTableViewController.h */,
-				1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */,
-				191822B21CE3B28C00E69D83 /* MediaTableViewCell.h */,
-				191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */,
-				1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */,
-				1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */,
-				1983C4681CE275D000DC59C6 /* User.h */,
-				1983C4691CE275D000DC59C6 /* User.m */,
-				1983C46B1CE2762100DC59C6 /* Media.h */,
-				1983C46C1CE2762100DC59C6 /* Media.m */,
-				1983C46E1CE2767800DC59C6 /* Comment.h */,
-				1983C46F1CE2767800DC59C6 /* Comment.m */,
-				1983C4711CE276D600DC59C6 /* DataSource.h */,
-				1983C4721CE276D600DC59C6 /* DataSource.m */,
 				191822B51CE525FD00E69D83 /* LoginViewController.h */,
 				191822B61CE525FD00E69D83 /* LoginViewController.m */,
+				19A772D71CEA517800E3F36D /* Like Button */,
+				19A772D31CEA4FE300E3F36D /* Table View Stuff */,
+				19A772D21CEA4FCC00E3F36D /* Model */,
 				1983C41E1CE268AA00DC59C6 /* Assets.xcassets */,
 				1983C4451CE269C400DC59C6 /* Images */,
 				1983C4201CE268AA00DC59C6 /* LaunchScreen.storyboard */,
@@ -225,6 +220,45 @@
 				1983C44F1CE269DC00DC59C6 /* 10.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		19A772D21CEA4FCC00E3F36D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1983C4681CE275D000DC59C6 /* User.h */,
+				1983C4691CE275D000DC59C6 /* User.m */,
+				1983C46B1CE2762100DC59C6 /* Media.h */,
+				1983C46C1CE2762100DC59C6 /* Media.m */,
+				1983C46E1CE2767800DC59C6 /* Comment.h */,
+				1983C46F1CE2767800DC59C6 /* Comment.m */,
+				1983C4711CE276D600DC59C6 /* DataSource.h */,
+				1983C4721CE276D600DC59C6 /* DataSource.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		19A772D31CEA4FE300E3F36D /* Table View Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				1983C4651CE26CD100DC59C6 /* ImagesTableViewController.h */,
+				1983C4661CE26CD100DC59C6 /* ImagesTableViewController.m */,
+				191822B21CE3B28C00E69D83 /* MediaTableViewCell.h */,
+				191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */,
+				1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */,
+				1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */,
+			);
+			name = "Table View Stuff";
+			sourceTree = "<group>";
+		};
+		19A772D71CEA517800E3F36D /* Like Button */ = {
+			isa = PBXGroup;
+			children = (
+				19A772CF1CEA4FC200E3F36D /* CircleSpinnerView.h */,
+				19A772D01CEA4FC200E3F36D /* CircleSpinnerView.m */,
+				19A772D41CEA517200E3F36D /* LikeButton.h */,
+				19A772D51CEA517200E3F36D /* LikeButton.m */,
+			);
+			name = "Like Button";
 			sourceTree = "<group>";
 		};
 		D49A001A75D4A4DAE5550CAF /* Frameworks */ = {
@@ -521,12 +555,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1966AAE31CE6CE8F0072EA12 /* MediaFullScreenViewController.m in Sources */,
+				19A772D11CEA4FC200E3F36D /* CircleSpinnerView.m in Sources */,
 				1983C46A1CE275D000DC59C6 /* User.m in Sources */,
 				1983C4701CE2767800DC59C6 /* Comment.m in Sources */,
 				191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */,
 				1983C46D1CE2762100DC59C6 /* Media.m in Sources */,
 				1983C4671CE26CD100DC59C6 /* ImagesTableViewController.m in Sources */,
 				191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */,
+				19A772D61CEA517200E3F36D /* LikeButton.m in Sources */,
 				1983C4731CE276D600DC59C6 /* DataSource.m in Sources */,
 				1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */,
 				1983C4141CE268AA00DC59C6 /* main.m in Sources */,
