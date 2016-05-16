@@ -191,9 +191,19 @@
 #pragma mark - UIScrollViewDelegate
 
 // #4
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    static int counter = 0;
+//    [self infiniteScrollIfNecessary];
+//    NSLog(@"counter is %d",counter++);
+//}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+    static int counter = 0;
     [self infiniteScrollIfNecessary];
+    NSLog(@"COUNTER is %d",counter++);
 }
+
 
 
 - (void) refreshControlDidFire:(UIRefreshControl *) sender {
