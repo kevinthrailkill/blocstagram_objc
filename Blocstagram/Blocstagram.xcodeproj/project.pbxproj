@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		191822B41CE3B28C00E69D83 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */; };
 		191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191822B61CE525FD00E69D83 /* LoginViewController.m */; };
+		1923FDC91CEB90ED00B42A49 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1923FDC81CEB90ED00B42A49 /* ComposeCommentView.m */; };
 		1966AAE31CE6CE8F0072EA12 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */; };
 		1983C4141CE268AA00DC59C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4131CE268AA00DC59C6 /* main.m */; };
 		1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1983C4161CE268AA00DC59C6 /* AppDelegate.m */; };
@@ -61,6 +62,8 @@
 		191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 		191822B51CE525FD00E69D83 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		191822B61CE525FD00E69D83 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1923FDC71CEB90ED00B42A49 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		1923FDC81CEB90ED00B42A49 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
 		1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
 		1983C40F1CE268AA00DC59C6 /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +249,8 @@
 				191822B31CE3B28C00E69D83 /* MediaTableViewCell.m */,
 				1966AAE11CE6CE8F0072EA12 /* MediaFullScreenViewController.h */,
 				1966AAE21CE6CE8F0072EA12 /* MediaFullScreenViewController.m */,
+				1923FDC71CEB90ED00B42A49 /* ComposeCommentView.h */,
+				1923FDC81CEB90ED00B42A49 /* ComposeCommentView.m */,
 			);
 			name = "Table View Stuff";
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 				191822B71CE525FD00E69D83 /* LoginViewController.m in Sources */,
 				19A772D61CEA517200E3F36D /* LikeButton.m in Sources */,
 				1983C4731CE276D600DC59C6 /* DataSource.m in Sources */,
+				1923FDC91CEB90ED00B42A49 /* ComposeCommentView.m in Sources */,
 				1983C4171CE268AA00DC59C6 /* AppDelegate.m in Sources */,
 				1983C4141CE268AA00DC59C6 /* main.m in Sources */,
 			);
