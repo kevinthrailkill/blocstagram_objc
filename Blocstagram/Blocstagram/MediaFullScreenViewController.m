@@ -54,6 +54,9 @@
     
     
     self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
+//    
+//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    UITapGestureRecognizer *windowTap = [[UITapGestureRecognizer alloc] initWithTarget:window action:@selector(tapFired:)];
     
     self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
     self.doubleTap.numberOfTapsRequired = 2;
