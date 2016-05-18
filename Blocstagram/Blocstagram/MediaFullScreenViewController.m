@@ -13,6 +13,8 @@
 @interface MediaFullScreenViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
+@property (nonatomic, strong) UITapGestureRecognizer *windowTap;
+
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
 
 
@@ -54,9 +56,9 @@
     
     
     self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
-//    
-//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-//    UITapGestureRecognizer *windowTap = [[UITapGestureRecognizer alloc] initWithTarget:window action:@selector(tapFired:)];
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    self.windowTap = [[UITapGestureRecognizer alloc] initWithTarget:window action:@selector(tapFired:)];
     
     self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
     self.doubleTap.numberOfTapsRequired = 2;
@@ -64,6 +66,8 @@
     [self.tap requireGestureRecognizerToFail:self.doubleTap];
     
     [self.scrollView addGestureRecognizer:self.tap];
+    [window addGestureRecognizer:self.windowTap];
+    
     [self.scrollView addGestureRecognizer:self.doubleTap];
 
 
